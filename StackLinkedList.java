@@ -3,6 +3,7 @@ package com.stack;
 /*
  * Implement stack with LinkedList 
  * LinkedList use node
+ * https://java2blog.com/implement-stack-using-linked-list-in-java/
  */
 public class StackLinkedList {
   private Node head; //first node
