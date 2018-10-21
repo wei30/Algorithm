@@ -61,6 +61,11 @@ public class StackUsingTwoQueues {
 	printQ(stackQ.firstQ);
 	System.out.println("size of first queue " +  stackQ.firstQ.size());
 }
+  /*
+   * first queue: 1  ->    ->  2 1 ->      ->  3  -> 3 2 1 
+   * second queue:   -> 1  ->      -> 2 1  ->     -> 
+   * 
+   */
   
 private static void printQ(Queue<Integer> firstQ2) {
 	// TODO Auto-generated method stub
