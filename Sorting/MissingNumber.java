@@ -4,8 +4,17 @@ public class MissingNum{
 		if(arr[mid] == num){
 			return mid;
 		}
-		if(arr[mid <=a[high]){
+		if(arr[mid] <=a[high]){ //lies right side 
 			if(num > arr[mid] && num <=arr[high]){
+				low = mid + 1;
+			}else{
+				high = mid - 1; 
+			}
+		}else{
+		     //lies left side
+			if(num <= arr[mid] && num > arr[low]){
+				high = mid - 1;
+			}else{
 				low = mid + 1;
 			}
 		}
