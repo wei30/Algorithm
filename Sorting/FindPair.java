@@ -5,7 +5,7 @@ public class FindPair{
 	//check the sum<0 move the left pointer forward
 	//else check the sum > 0 move the right pointer backward 
 	int arr[] = new arr{1,2,-30, 3,4}
-	Arrays.
+	Arrays.sort(arr);
 	int minSum = Integer.Max_Value;
 	int sum = arr[left] + arr[right];
 	while(left < right){
@@ -14,10 +14,7 @@ public class FindPair{
 			minleft = left;
 			minRigth = right;
 		}
-		if(sum <0){
-		}else{
-			
-		}
+		if sum < 0 ? left++ : right--;
 	}
 	
 }
