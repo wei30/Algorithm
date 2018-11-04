@@ -1,4 +1,4 @@
-public class MissingNum{
+public class int MissingNum{
 	while(low <= high){
 		mid = low + ((high-low)/2);
 		if(arr[mid] == num){
@@ -19,4 +19,5 @@ public class MissingNum{
 			}
 		}
 	}
+	return -1;
 }
