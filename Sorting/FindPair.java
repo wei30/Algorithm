@@ -7,11 +7,11 @@ public class FindPair{
 	int arr[] = new arr{1,2,-30, 3,4};
 	Arrays.sort(arr);
 	int minSum = Integer.Max_Value;
-	int sum = arr[left] + arr[right];
 	int left = 0;
 	int right=arr.length-1;
 	int minleft = left;
 	int minRight = right;
+	int sum = arr[left] + arr[right];
 	while(left < right){
 		if(Math.abs(sum) < Math.abs(minSum)){
 			minSum = sum;
