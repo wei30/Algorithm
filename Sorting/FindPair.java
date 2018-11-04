@@ -8,6 +8,10 @@ public class FindPair{
 	Arrays.sort(arr);
 	int minSum = Integer.Max_Value;
 	int sum = arr[left] + arr[right];
+	int left = 0;
+	int right=arr.length-1;
+	int minleft = left;
+	int minRight = right;
 	while(left < right){
 		if(Math.abs(sum) < Math.abs(minSum)){
 			minSum = sum;
