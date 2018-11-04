@@ -10,5 +10,8 @@ public class BinaryTreeEx{
 		InOrder(root.right);
 	}
 	public void PostOrder(TreeNode root){
+		PostOrder(root.left);
+		PostOrder(root.right);
+		System.out.println(root.data);
 	}
 }
