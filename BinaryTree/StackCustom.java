@@ -4,4 +4,11 @@ public class BinaryTreeEx{
 		PreOrder(root.left);
 		PreOrder(root.right);
 	}
+	public void InOrder(TreeNode root){
+		InOrder(root.left);
+		System.out.println(root.data);
+		InOrder(root.right);
+	}
+	public void PostOrder(TreeNode root){
+	}
 }
