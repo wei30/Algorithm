@@ -1,4 +1,4 @@
-public class FindSecondLargest{
+public int FindSecondLargest{
 	int[] arr={7,5,6,1,4,2};
 	int secondlargest=0;
 	int largest=0;
@@ -11,4 +11,5 @@ public class FindSecondLargest{
 			secondlargest = arr[i];
 		}
 	}
+	return secondlargest;
 }
