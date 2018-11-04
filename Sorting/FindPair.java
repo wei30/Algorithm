@@ -14,6 +14,10 @@ public class FindPair{
 			minleft = left;
 			minRigth = right;
 		}
+		if(sum <0){
+		}else{
+			
+		}
 	}
 	
 }
