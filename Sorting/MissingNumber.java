@@ -12,7 +12,7 @@ public class int MissingNum{
 			}
 		}else{
 		     //lies left side
-			if(num <= arr[mid] && num > arr[low]){
+			if(num < arr[mid] && num >= arr[low]){
 				high = mid - 1;
 			}else{
 				low = mid + 1;
