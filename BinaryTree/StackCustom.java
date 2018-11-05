@@ -13,10 +13,11 @@ public class BinaryTreeEx{
 		while(!stack.empty()){//loop to check if the stack if is not empty
 			TreeNode n = stack.pop();
 			System.out.println(n.data);
+			if(n.right != null){
+				stack.push(n.right);
+			}
 			if(n.left != null){
 				stack.push(n.left);
-			}else{
-				stack.push(n.right);
 			}
 		}
 		
