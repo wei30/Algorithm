@@ -27,6 +27,12 @@ public class BinaryTreeEx{
 		System.out.println(root.data);
 		InOrder(root.right);
 	}
+	public void InOrderIterative(TreeNode root){
+		Stack<TreeNode> stack  = new Stack<TreeNode>();
+		if(root == null)return;
+		while( !stack.empty()){//while it has something
+		}
+	}
 	public void PostOrder(TreeNode root){
 		PostOrder(root.left);
 		PostOrder(root.right);
