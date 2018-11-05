@@ -30,8 +30,22 @@ public class BinaryTreeEx{
 	public void InOrderIterative(TreeNode root){
 		Stack<TreeNode> stack  = new Stack<TreeNode>();
 		if(root == null)return;
-		while( !stack.empty()){//while it has something
+		while(true){
+			if(root != null){//starting from the root, iterate to left 
+				stack.push(root);
+				root =root.left;
+				
+			}else{
+				if(stack.isEmpty()) break;//if root is null and stack is empty then you break out the loop
+				//loop all the way to the left node
+				//you can print if no more left node
+				root = stack.pop();
+				System.out.println(root.data);
+				root = root.right;
+				
+			}
 		}
+		
 	}
 	public void PostOrder(TreeNode root){
 		PostOrder(root.left);
