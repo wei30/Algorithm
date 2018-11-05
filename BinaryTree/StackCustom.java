@@ -36,7 +36,7 @@ public class BinaryTreeEx{
 				root =root.left;
 				
 			}else{
-				if(stack.isEmpty()) break;//if root is null and stack is empty then you break out the loop
+				if(stack.empty()) break;//if root is null and stack is empty then you break out the loop
 				//loop all the way to the left node
 				//you can print if no more left node
 				root = stack.pop();
