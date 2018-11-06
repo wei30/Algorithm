@@ -52,4 +52,29 @@ public class BinaryTreeEx{
 		PostOrder(root.right);
 		System.out.println(root.data);
 	}
+	
+	public void PostOrderIterative(TreeNode root){
+		//check if root is null
+		if(root == null)return;
+		//start looping, left right and node
+	        //using two stack for this problem
+		Stack<TreeNode> sk1 = new Stack<TreeNode>();
+		Stack<TreeNode> sk2 = new Stack<TreeNode>();
+		//push root into stack 1
+		sk1.push(root);
+		while(!sk1.empty()){
+			root = sk1.pop();
+			sk2.push(root);
+			if(root.right != null){
+				sk1.push(root.right);
+			}
+			if(root.left != null){
+				sk1.push(root.left);
+			}
+	         while(!sk2.empty()){
+			 root = sk2.pop();
+			 System.out.println(root.data);
+		 }
+		}
+	}
 }
