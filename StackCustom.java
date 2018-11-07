@@ -46,7 +46,8 @@ public class StackCustom {
    public boolean isFull(){
 	   return (size-1 == top);
    }
-   
+   publci StackCustom sortStack(StackCustom s2){
+   }
    
    @Override
 public String toString() {
@@ -64,6 +65,7 @@ public static void main(String[] args) {
 	stackCustom.pop();
 	stackCustom.pop();
 	stackCustom.pop();
+	stackCustom.sort(new StackCustom(5));
 
 	
 }
