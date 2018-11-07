@@ -46,7 +46,12 @@ public class StackCustom {
    public boolean isFull(){
 	   return (size-1 == top);
    }
-   publci StackCustom sortStack(StackCustom s2){
+   publci StackCustom sortStack(StackCustom s1){
+	   StackCustom s2 = new StackCustom(5);
+	   int currentValue = s1.pop();
+	   while(!s1.isEmpty()){
+		   while(!s2.isEmpty() && currentValue < s2.pop())
+	   }
    }
    
    @Override
@@ -65,7 +70,7 @@ public static void main(String[] args) {
 	stackCustom.pop();
 	stackCustom.pop();
 	stackCustom.pop();
-	stackCustom.sort(new StackCustom(5));
+	stackCustom.sort(stackCustom);
 
 	
 }
