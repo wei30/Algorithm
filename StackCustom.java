@@ -50,8 +50,12 @@ public class StackCustom {
 	   StackCustom s2 = new StackCustom(5);
 	   int currentValue = s1.pop();
 	   while(!s1.isEmpty()){
-		   while(!s2.isEmpty() && currentValue < s2.pop())
+		   while(!s2.isEmpty() && currentValue > s2.peek()){
+			   
+		   }
+			   
 	   }
+	   s2.push(currentValue);
    }
    
    @Override
