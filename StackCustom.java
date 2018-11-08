@@ -25,7 +25,6 @@ public class StackCustom {
 		   System.out.println("Stack is full!");
 	   }
    }
-   
    public int pop(){
 	   if(!isEmpty()){
 		   int returnTop = top;
