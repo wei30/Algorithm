@@ -52,8 +52,7 @@ public class StackCustom {
 	   while(!s1.isEmpty()){
 		   while(!s2.isEmpty() && currentValue > s2.peek()){
 		s1.push(s2.pop());
-		   }
-			   
+		   }	   
 	   }
 	   s2.push(currentValue);
    }
