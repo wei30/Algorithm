@@ -41,8 +41,7 @@ public class BinaryTreeEx{
 				//you can print if no more left node
 				root = stack.pop();
 				System.out.println(root.data);
-				root = root.right;
-				
+				root = root.right;	
 			}
 		}
 		
