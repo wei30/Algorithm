@@ -16,6 +16,15 @@ public Node findFirstNode(){
 	}
    //after if there is loop, check whats the starting node of a node
 	if(loop == true){
+		slowptr = head; //starting point
+	   while(slowptr != fastptr){
+		  slowptr = slowptr.next;
+		  fastptr = fastptr.next;
+	   }
 		
+	}else{
+		//no loop
+		slowptr = null;
 	}
+	return slowptr;
 }
