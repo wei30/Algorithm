@@ -10,8 +10,8 @@ public boolean detectLoopLinkedList(){ //return true if there loop in linkedlist
 			//found a loop
 			return true;
 		}
-		fastptr = fastptr.next.next;
-		slowptr = slowptr.next;
+		fastptr = fastptr.next.next; //move two node
+		slowptr = slowptr.next; 
 	}
 	return false;
 }
