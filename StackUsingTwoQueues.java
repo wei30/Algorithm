@@ -44,8 +44,7 @@ public class StackUsingTwoQueues {
 	  if(firstQ.isEmpty()){
 		  System.out.println("Empty queue");
 	  }
-		  return firstQ.remove();
-		  
+		  return firstQ.remove();	  
   }
   public static void main(String[] args) {
 	StackUsingTwoQueues stackQ = new StackUsingTwoQueues();
