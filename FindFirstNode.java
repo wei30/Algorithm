@@ -14,5 +14,8 @@ public Node findFirstNode(){
 		fastptr = fastptr.next.next;
 		slowptr = slowptr.next;
 	}
-
+   //after if there is loop, check whats the starting node of a node
+	if(loop == true){
+		
+	}
 }
