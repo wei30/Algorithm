@@ -19,8 +19,7 @@ public class StackUsingTwoQueues {
   
   StackUsingTwoQueues(){
 	  firstQ = new LinkedList<Integer>();
-	  secondQ = new LinkedList<Integer>();
-	  
+	  secondQ = new LinkedList<Integer>();  
   }
   //insert value into the queue
   public void push(int value){
