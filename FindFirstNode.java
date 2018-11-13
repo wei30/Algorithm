@@ -1,4 +1,3 @@
-public class MissingNum{
-	while(low <= high){
-	}
+public Node findNode(){
+	
 }
