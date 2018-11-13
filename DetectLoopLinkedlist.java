@@ -11,5 +11,6 @@ public boolean detectLoopLinkedList(){ //return true if there loop in linkedlist
 			return true;
 		}
 		fastptr = fastptr.next.next;
+		slowptr = slowptr.next;
 	}
 }
