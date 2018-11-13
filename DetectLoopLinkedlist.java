@@ -10,6 +10,6 @@ public boolean detectLoopLinkedList(){ //return true if there loop in linkedlist
 			//found a loop
 			return true;
 		}
-		
+		fastptr = fastptr.next.next;
 	}
 }
